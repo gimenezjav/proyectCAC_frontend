@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geek Stale</title>
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
 </head>
+
 <body>
-    <div> pagina 3d</div>
+    <div>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/images/GEEKSTALE00.png" alt="Bootstrap" width="70"
+                        height="40"></a>
+                <div>
+
+                    <button type="button" class="btn btn-primary btn-sm "
+                        style="background-color: #B51A2B; margin-right: 15px;">Cotiza tu idea 3D</button>
+                    <button type="button" class="btn btn-primary btn-sm "
+                        style="background-color: #B51A2B; margin-right: 15px;">Mis pedidos</button>
+
+                    <button class="navbar-toggler" type="button">
+                        <span class=" button-cart">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-cart3" viewBox="0 0 16 16">
+                                <path stroke="#B51A2B" stroke-width="0.7"
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class=" button-custom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                                width="35" height="35">
+                                <path stroke="#B51A2B" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10"
+                                    d="M4 7h22M4 15h22M4 23h22"></path>
+                            </svg></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Geek Stale</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="./assets/js/bootstrap.js"></script>
 </body>
+
 </html>

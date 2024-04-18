@@ -1,3 +1,11 @@
-body {
-    background-color: blue;
-}
+
+.navbar{
+    background-color: #242F49;
+    border-bottom: 2px solid #B51A2B;
+};
+
+.button-custom, .button-cart{
+    color: #B51A2B;
+    cursor: pointer;
+};
+
