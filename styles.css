@@ -1,11 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
 
-.navbar{
-    background-color: #242F49;
-    border-bottom: 2px solid #B51A2B;
-};
+header.navbar {
+    background-color: #202020;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.button-custom, .button-cart{
-    color: #B51A2B;
+header .logo {
+    /* Ajusta el tamaño del logo según tus necesidades */
+    height: 50px; /* Ejemplo */
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    height: 40px; /* Ajusta la altura según tus necesidades */
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #565656;
+    color: white;
+    border: none;
+    height: 40px; /* Alinea la altura con la del input */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+.shopping-cart .cart-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex; /* Asegura que el ícono y el texto estén centrados verticalmente */
+    align-items: center;
+}
+
+.btn-navbar {
+    background-color: #565656;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    display: flex; /* Asegura que el ícono y el texto estén centrados verticalmente */
+    align-items: center;
     cursor: pointer;
-};
+}
 
+.product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Agregar estilos responsivos y de Bootstrap según sea necesario */
