@@ -1,54 +1,71 @@
 body {
     margin: 0;
+    padding-top: 90px; /* Ajustar este valor a la altura de tu navbar */
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #161E2F;
 }
 
 header.navbar {
-    background-color: #202020;
-    padding: 5px 20px;
+    background-color: #242F49;
+    padding: 8px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 2.5px solid #B51A2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 header .logo {
-    /* Ajusta el tamaño del logo según tus necesidades */
-    height: 50px; /* Ejemplo */
+    height: 50px; /* Ajustar según el tamaño real del logo */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
 }
 
 .search-bar input {
-    padding: 5px;
     margin-right: 10px;
     font-size: 16px;
     border: none;
-    height: 40px; /* Ajusta la altura según tus necesidades */
+    height: 40px;
 }
 
 .search-bar button {
-    padding: 5px 10px;
+    padding: 0px 10px;
     background-color: #565656;
+    margin-right: 40px;
     color: white;
     border: none;
-    height: 40px; /* Alinea la altura con la del input */
-    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    height: 40px;
+    cursor: pointer;
 }
 
 .shopping-cart .cart-icon {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    display: flex; /* Asegura que el ícono y el texto estén centrados verticalmente */
+    display: flex;
     align-items: center;
+    margin-right: 40px;
 }
 
 .btn-navbar {
     background-color: #565656;
     border: none;
     color: white;
-    padding: 10px;
-    font-size: 20px;
-    display: flex; /* Asegura que el ícono y el texto estén centrados verticalmente */
+    padding: 2px 15px;
+    font-size: 30px;
+    display: flex;
     align-items: center;
     cursor: pointer;
 }
@@ -62,7 +79,7 @@ header .logo {
 }
 
 footer {
-    background-color: #202020;
+    background-color: #242F49;
     color: white;
     text-align: center;
     padding: 20px 0;
