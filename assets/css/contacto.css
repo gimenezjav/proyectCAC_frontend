@@ -46,16 +46,17 @@ label {
     color: #B51A2B;
 }
 
-input[id="name"],
-input[type="text"],
-input[type="email"],
-input[type="tel"],
+.input,
 textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #133481;
     border-radius: 5px;
     box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
 }
 .boton {
     display: flex;
