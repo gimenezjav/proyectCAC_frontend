@@ -2,7 +2,7 @@ const cardList = [];
 
 // Se inserta Card en index.html
 const getCard = () => {
-  return fetch("../components/card.html")
+  return fetch("./components/card.html")
     .then((response) => response.text())
     .then((html) => {
       return html;
@@ -25,7 +25,7 @@ for (let i = 0; i < 10; i++) {
 
 // Se inserta Modal en index.html
 const getCardModal = () => {
-  return fetch("../components/cardModal.html")
+  return fetch("./components/cardModal.html")
     .then((response) => response.text())
     .then((html) => {
       return html;
