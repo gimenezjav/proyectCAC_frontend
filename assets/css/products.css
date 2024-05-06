@@ -1,0 +1,138 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: 18rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title, .card-description, .card-button {
+    margin-top: 0;
+    color: #333;
+}
+
+.card-description {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: transparent;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+dialog {
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    
+  }
+
+  .flex-container {
+    display: flex;
+    width: 100%;
+}
+  
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.4);
+}
+  
+.modal-left {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: sticky;
+}
+  
+.modal-left > img {
+    width: 90%;
+}
+  
+.modal-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+  
+.modal-title {
+    margin-top: 15px;
+}
+  
+.modal-right > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.modal-color {
+    appearance: none;
+    background-color: transparent;
+    width: 75px;
+    height: 75px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+  
+.modal-color::-webkit-color-swatch {
+    border-radius: 50%;
+}
+  
+.modal-color::-moz-color-swatch {
+    border-radius: 50%;
+}
+  
+.modal-right > div + div > input {
+    width: 10%;
+    margin-bottom: 15px;
+}
+  
+.modal-right > button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #B51A2B;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+  
+.modal-right > button:hover {
+    background-color: #d11f34;
+}
