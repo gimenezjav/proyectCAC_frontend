@@ -1,5 +1,8 @@
 const cardList = [];
 
+const isIndexPage = document.location.pathname.includes("index.html");
+const cardLimit = isIndexPage ? 4 : 12;
+
 // Se inserta Card en index.html
 const getCard = () => {
   return fetch("./components/card.html")
@@ -10,7 +13,7 @@ const getCard = () => {
     .catch((err) => console.error("Failed to load card: ", err));
 };
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < cardLimit; i++) {
   getCard().then((html) => {
     document.getElementById("card-container").innerHTML += html;
     document.getElementById("card").setAttribute("id", "card" + i);
