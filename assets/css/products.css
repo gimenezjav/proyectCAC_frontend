@@ -136,3 +136,28 @@ dialog::backdrop {
 .modal-right > button:hover {
     background-color: #d11f34;
 }
+
+/* Media query para pantallas pequeñas (hasta 576px) */
+@media only screen and (max-width: 576px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Media query para pantallas medianas (hasta 776px) */
+@media only screen and (min-width: 577px) and (max-width: 776px) {
+    .flex-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Media query para pantallas grandes (más de 777px) */
+@media only screen and (min-width: 777px) {
+    .flex-container {
+        justify-content: space-around;
+    }
+}
