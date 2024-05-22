@@ -60,4 +60,13 @@ getCardModal().then((html) => {
       cardModal.style.visibility = "hidden";
     }
   });
+
+  const addToCartButton = document.querySelector('.card-modal button');
+
+    // Agregar evento de clic al botón
+    addToCartButton.addEventListener('click', () => {
+        // Cerrar el modal
+        cardModal.close();
+        cardModal.style.visibility = "hidden";
+    });
 });
