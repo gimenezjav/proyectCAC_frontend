@@ -29,23 +29,39 @@
                             <div class="formAreas">
                                 <div class="form">
                                     <label for="name"><span class="obligatorio">*</span>Nombre </label>
-                                    <input id="name" class="input" name="name" placeholder="Ej. Mónica Pérez">
+                                    <input id="name" class="input required" name="name" placeholder="Ej. Mónica Pérez">
 
-                                    <label for="telefono">Teléfono</label>
-                                    <input type="tel" id="telefono" class="input" name="telefono" placeholder="Ej. 01112345678">
+                                    <label class="label-contact" for="telefono"><span class="obligatorio">*</span>Teléfono</label>
+                                    <input type="tel" id="telefono" class="input required" name="telefono" placeholder="Ej. 01112345678">
 
-                                    <label for="email"><span class="obligatorio">*</span>Correo electrónico </label>
-                                    <input type="email" id="email" class="input" placeholder="ejemplo@gmail.com" required>
+                                    <label class="label-contact" for="email"><span class="obligatorio">*</span>Correo electrónico </label>
+                                    <input type="email" id="email" class="input required" placeholder="ejemplo@gmail.com">
 
-                                    <label for="message"><span class="obligatorio">*</span>Describinos tu idea </label>
+                                    <label class="label-contact" for="message"><span class="obligatorio">*</span>Describinos tu idea </label>
                                     <textarea id="message" cols="40" rows="6" maxlength="250" 
-                                        placeholder="Proyecto, materiales, colores, comentarios" required></textarea>
+                                        placeholder="Proyecto, materiales, colores, comentarios" class="required"></textarea>
 
 
-                                    <label for="imagen">¿Tenés alguna imagen?</label>
-                                    <input type="file" id="imagen" class="input" name="imagen" accept="image/*"><br><br>
+                                    <label class="label-contact" for="imagen">¿Tenés alguna imagen?</label>
+                                    <input type="file" id="imagen" class="input" name="imagen" accept="image/*">
 
                                 </div>
+                                <label class="label-contact" for="selectOption">Como nos conociste?:</label>
+                                <select id="selectOption" class="input">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="opcion1">Publicidad</option>
+                                    <option value="opcion2">Recomendación</option>
+                                    <option value="opcion3">Redes</option>
+                                </select>
+                            
+                            </div>
+                            <div class="checkbox-container">
+                                <label for="checkboxOption1">Recibir correo con promociones:</label>
+                                <input type="checkbox" id="checkboxOption1" class="checkbox" name="checkboxOption1">
+
+                            </div>
+                            <br>
+                            
                                 <div class="boton">
                                     <input type="submit" value="Enviar" class="enviar-btn">
 
@@ -54,16 +70,29 @@
 
 
                             <script>
-                                window.onload = function () {
-                                    (function (d, script) {
-                                        script = d.createElement('script');
-                                        script.type = 'text/javascript';
-                                        script.async = true;
-                                        script.src = 'https://w.app/widget-v1/7CkqyL.js';
-                                        d.getElementsByTagName('head')[0].appendChild(script);
-                                    }(document));
+                                function validarFormulario(event) {
+                                    // Obtener los elementos del formulario
+                                    const nombre = document.getElementById('name');
+                                    const email = document.getElementById('email');
+                                    const message = document.getElementById('message');
+                            
+                                    // Verificar que los campos obligatorios estén completos
+                                    if (!nombre.value.trim() || !email.value.trim() || !message.value.trim()) {
+                                        // Mostrar mensaje de error
+                                        alert('Por favor, completa todos los campos obligatorios.');
+                                        // Evitar que se envíe el formulario
+                                        event.preventDefault();
+                                    }
+                                }
+                            
+                                window.onload = function() {
+                                    // Obtener el formulario
+                                    const formulario = document.querySelector('form');
+                                    // Agregar evento de envío al formulario
+                                    formulario.addEventListener('submit', validarFormulario);
                                 };
                             </script>
+                            
 
                     </fieldset>
 
