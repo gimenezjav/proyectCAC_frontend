@@ -1,7 +1,7 @@
 const cardList = [];
 
-const isIndexPage = document.location.pathname.includes("index.html");
-const cardLimit = isIndexPage ? 4 : 12;
+const isProductsPage = document.location.pathname.includes("products.html");
+const cardLimit = isProductsPage ? 12 : 4;
 
 // Se inserta Card en index.html
 const getCard = () => {
