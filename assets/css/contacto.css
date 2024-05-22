@@ -79,11 +79,11 @@ textarea {
 .checkbox-container {
     display: flex; /* Establece el contenedor como un flexbox */
     align-items: center; /* Alinea los elementos verticalmente en el centro */
+    margin-top: 15px;
 }
 
 .checkbox-container label {
     margin-right: 10px; /* Añade un espacio entre el texto y el checkbox */
-    margin-top: 15px;
 }
 
 .label-contact {
